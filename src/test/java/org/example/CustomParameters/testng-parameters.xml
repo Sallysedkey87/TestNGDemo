@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameters TestSuite">
+<test name="Test 1">
+	<parameter name="browser" value="edge"/>
+	<parameter name="OS" value="mac"/>
+	<parameter name="Models" value="IOS17, IOS18"/>
+	<classes>
+		<class name="org.example.CustomParameters.ParametersDemo"/>
+	</classes>
+</test>
+</suite>

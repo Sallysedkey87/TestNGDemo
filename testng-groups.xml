@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression TestSuite">
+<test name="GroupsDemo">
+<groups>
+	<define name="smoke">
+		<include name="smoke"></include>
+	</define>
+	<define name="Regression">
+	<include name="Regression"></include>
+</define>
+	<run>
+		<include name="Regression"></include>
+		<exclude name="smoke"></exclude>
+	</run>
+</groups>
+	<classes>
+		<class name="org.example.GroupingDemo"></class>
+	</classes>
+</test>
+</suite>
